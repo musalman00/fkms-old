@@ -19,7 +19,6 @@
             :value="old('name', ($editing ? $kiosk->name : ''))"
             maxlength="255"
             placeholder="Name"
-            required
         ></x-inputs.text>
     </x-inputs.group>
 
@@ -30,7 +29,6 @@
             :value="old('description', ($editing ? $kiosk->description : ''))"
             maxlength="255"
             placeholder="Description"
-            required
         ></x-inputs.text>
     </x-inputs.group>
 </div>

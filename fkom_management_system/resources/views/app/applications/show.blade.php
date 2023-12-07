@@ -74,15 +74,15 @@
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.applications.inputs.reason_reject')
-                        </h5>
-                        <span>{{ $application->reason_reject ?? '-' }}</span>
-                    </div>
-                    <div class="mb-4">
-                        <h5 class="font-medium text-gray-700">
                             @lang('crud.applications.inputs.status')
                         </h5>
                         <span>{{ $application->status ?? '-' }}</span>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="font-medium text-gray-700">
+                            @lang('crud.applications.inputs.reason_reject')
+                        </h5>
+                        <span>{{ $application->reason_reject ?? '-' }}</span>
                     </div>
                 </div>
 

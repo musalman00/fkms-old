@@ -25,8 +25,8 @@ class ApplicationFactory extends Factory
         return [
             'start_date' => $this->faker->date(),
             'end_date' => $this->faker->date(),
-            'operating_day' => 'MONDAY',
-            'operating_hour' => $this->faker->time(),
+            'operating_day' => $this->faker->text(255),
+            'operating_hour' => $this->faker->text(255),
             'business_type' => $this->faker->text(255),
             'status' => 'Approve',
             'reason_reject' => $this->faker->text(255),

@@ -39,7 +39,6 @@ Route::prefix('/')
         Route::resource('roles', RoleController::class);
         Route::resource('permissions', PermissionController::class);
 
-        Route::resource('applications', ApplicationController::class);
         Route::resource('complaints', ComplaintController::class);
         Route::resource('payments', PaymentController::class);
         Route::resource('promotions', PromotionController::class);
@@ -49,4 +48,5 @@ Route::prefix('/')
             KioskParticipantController::class
         );
         Route::resource('users', UserController::class);
+        Route::resource('applications', ApplicationController::class);
     });

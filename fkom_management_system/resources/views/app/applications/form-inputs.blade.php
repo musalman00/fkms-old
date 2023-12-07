@@ -52,9 +52,14 @@
     </x-inputs.group>
 
     <x-inputs.group class="w-full">
-        <x-inputs.select name="operating_day" label="Operating Day">
-            @php $selected = old('operating_day', ($editing ? $application->operating_day : '')) @endphp
-        </x-inputs.select>
+        <x-inputs.text
+            name="operating_day"
+            label="Operating Day"
+            :value="old('operating_day', ($editing ? $application->operating_day : ''))"
+            maxlength="255"
+            placeholder="Operating Day"
+            required
+        ></x-inputs.text>
     </x-inputs.group>
 
     <x-inputs.group class="w-full">
@@ -80,6 +85,14 @@
     </x-inputs.group>
 
     <x-inputs.group class="w-full">
+        <x-inputs.select name="status" label="Status">
+            @php $selected = old('status', ($editing ? $application->status : '')) @endphp
+            <option value="Approve" {{ $selected == 'Approve' ? 'selected' : '' }} >Approve</option>
+            <option value="Reject" {{ $selected == 'Reject' ? 'selected' : '' }} >Reject</option>
+        </x-inputs.select>
+    </x-inputs.group>
+
+    <x-inputs.group class="w-full">
         <x-inputs.text
             name="reason_reject"
             label="Reason Reject"
@@ -88,11 +101,5 @@
             placeholder="Reason Reject"
             required
         ></x-inputs.text>
-    </x-inputs.group>
-
-    <x-inputs.group class="w-full">
-        <x-inputs.select name="status" label="Status">
-            @php $selected = old('status', ($editing ? $application->status : '')) @endphp
-        </x-inputs.select>
     </x-inputs.group>
 </div>

@@ -21,8 +21,8 @@ class KioskStoreRequest extends FormRequest
     {
         return [
             'number' => ['required', 'max:255', 'string'],
-            'name' => ['required', 'max:255', 'string'],
-            'description' => ['required', 'max:255', 'string'],
+            'name' => ['nullable', 'max:255', 'string'],
+            'description' => ['nullable', 'max:255', 'string'],
         ];
     }
 }

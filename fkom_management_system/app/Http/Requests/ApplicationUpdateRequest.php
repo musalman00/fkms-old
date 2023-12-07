@@ -25,14 +25,11 @@ class ApplicationUpdateRequest extends FormRequest
             'payment_id' => ['required', 'exists:payments,id'],
             'start_date' => ['required', 'date'],
             'end_date' => ['required', 'date'],
-            'operating_day' => [
-                'required',
-                'in:monday,tuesday,wednesday,thursday,friday',
-            ],
-            'operating_hour' => ['required', 'date_format:H:i:s'],
+            'operating_day' => ['required', 'max:255', 'string'],
+            'operating_hour' => ['required', 'max:255', 'string'],
             'business_type' => ['required', 'max:255', 'string'],
-            'reason_reject' => ['required', 'max:255', 'string'],
             'status' => ['required', 'in:approve,reject'],
+            'reason_reject' => ['required', 'max:255', 'string'],
         ];
     }
 }

@@ -17,14 +17,8 @@ return new class extends Migration {
             $table->unsignedBigInteger('payment_id');
             $table->date('start_date');
             $table->date('end_date');
-            $table->enum('operating_day', [
-                'MONDAY',
-                'TUESDAY',
-                'WEDNESDAY',
-                'THURSDAY',
-                'FRIDAY',
-            ]);
-            $table->time('operating_hour');
+            $table->string('operating_day');
+            $table->string('operating_hour');
             $table->string('business_type');
             $table->enum('status', ['Approve', 'Reject']);
             $table->string('reason_reject');

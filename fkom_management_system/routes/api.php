@@ -45,8 +45,6 @@ Route::name('api.')
         Route::apiResource('roles', RoleController::class);
         Route::apiResource('permissions', PermissionController::class);
 
-        Route::apiResource('applications', ApplicationController::class);
-
         Route::apiResource('complaints', ComplaintController::class);
 
         Route::apiResource('payments', PaymentController::class);
@@ -131,4 +129,6 @@ Route::name('api.')
             UserPaymentsController::class,
             'store',
         ])->name('users.payments.store');
+
+        Route::apiResource('applications', ApplicationController::class);
     });

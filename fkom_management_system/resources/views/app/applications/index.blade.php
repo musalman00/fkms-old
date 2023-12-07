@@ -74,10 +74,10 @@
                                     @lang('crud.applications.inputs.business_type')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.applications.inputs.reason_reject')
+                                    @lang('crud.applications.inputs.status')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.applications.inputs.status')
+                                    @lang('crud.applications.inputs.reason_reject')
                                 </th>
                                 <th></th>
                             </tr>
@@ -114,10 +114,10 @@
                                     {{ $application->business_type ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-left">
-                                    {{ $application->reason_reject ?? '-' }}
+                                    {{ $application->status ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-left">
-                                    {{ $application->status ?? '-' }}
+                                    {{ $application->reason_reject ?? '-' }}
                                 </td>
                                 <td
                                     class="px-4 py-3 text-center"

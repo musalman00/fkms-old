@@ -22,27 +22,6 @@ return [
         'removed' => 'Successfully removed',
     ],
 
-    'applications' => [
-        'name' => 'Applications',
-        'index_title' => 'Applications List',
-        'new_title' => 'New Application',
-        'create_title' => 'Create Application',
-        'edit_title' => 'Edit Application',
-        'show_title' => 'Show Application',
-        'inputs' => [
-            'kiosk_id' => 'Kiosk',
-            'user_id' => 'User',
-            'payment_id' => 'Payment',
-            'start_date' => 'Start Date',
-            'end_date' => 'End Date',
-            'operating_day' => 'Operating Day',
-            'operating_hour' => 'Operating Hour',
-            'business_type' => 'Business Type',
-            'reason_reject' => 'Reason Reject',
-            'status' => 'Status',
-        ],
-    ],
-
     'complaints' => [
         'name' => 'Complaints',
         'index_title' => 'Complaints List',
@@ -132,6 +111,27 @@ return [
             'name' => 'Name',
             'email' => 'Email',
             'password' => 'Password',
+        ],
+    ],
+
+    'applications' => [
+        'name' => 'Applications',
+        'index_title' => 'Applications List',
+        'new_title' => 'New Application',
+        'create_title' => 'Create Application',
+        'edit_title' => 'Edit Application',
+        'show_title' => 'Show Application',
+        'inputs' => [
+            'kiosk_id' => 'Kiosk',
+            'user_id' => 'User',
+            'payment_id' => 'Payment',
+            'start_date' => 'Start Date',
+            'end_date' => 'End Date',
+            'operating_day' => 'Operating Day',
+            'operating_hour' => 'Operating Hour',
+            'business_type' => 'Business Type',
+            'status' => 'Status',
+            'reason_reject' => 'Reason Reject',
         ],
     ],
 
