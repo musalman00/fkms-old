@@ -18,11 +18,6 @@
                 </div>
 
                 <x-nav-dropdown title="Apps" align="right" width="48">
-                        @can('view-any', App\Models\Complaint::class)
-                        <x-dropdown-link href="{{ route('complaints.index') }}">
-                        Complaints
-                        </x-dropdown-link>
-                        @endcan
                         @can('view-any', App\Models\Payment::class)
                         <x-dropdown-link href="{{ route('payments.index') }}">
                         Payments
@@ -51,6 +46,11 @@
                         @can('view-any', App\Models\Application::class)
                         <x-dropdown-link href="{{ route('applications.index') }}">
                         Applications
+                        </x-dropdown-link>
+                        @endcan
+                        @can('view-any', App\Models\Complaint::class)
+                        <x-dropdown-link href="{{ route('complaints.index') }}">
+                        Complaints
                         </x-dropdown-link>
                         @endcan
                 </x-nav-dropdown>
@@ -195,11 +195,6 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
             
-                @can('view-any', App\Models\Complaint::class)
-                <x-responsive-nav-link href="{{ route('complaints.index') }}">
-                Complaints
-                </x-responsive-nav-link>
-                @endcan
                 @can('view-any', App\Models\Payment::class)
                 <x-responsive-nav-link href="{{ route('payments.index') }}">
                 Payments
@@ -228,6 +223,11 @@
                 @can('view-any', App\Models\Application::class)
                 <x-responsive-nav-link href="{{ route('applications.index') }}">
                 Applications
+                </x-responsive-nav-link>
+                @endcan
+                @can('view-any', App\Models\Complaint::class)
+                <x-responsive-nav-link href="{{ route('complaints.index') }}">
+                Complaints
                 </x-responsive-nav-link>
                 @endcan
 

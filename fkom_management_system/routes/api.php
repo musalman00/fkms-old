@@ -7,8 +7,8 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\KioskController;
 use App\Http\Controllers\Api\PaymentController;
-use App\Http\Controllers\Api\ComplaintController;
 use App\Http\Controllers\Api\PromotionController;
+use App\Http\Controllers\Api\ComplaintController;
 use App\Http\Controllers\Api\PermissionController;
 use App\Http\Controllers\Api\ApplicationController;
 use App\Http\Controllers\Api\UserPaymentsController;
@@ -44,8 +44,6 @@ Route::name('api.')
     ->group(function () {
         Route::apiResource('roles', RoleController::class);
         Route::apiResource('permissions', PermissionController::class);
-
-        Route::apiResource('complaints', ComplaintController::class);
 
         Route::apiResource('payments', PaymentController::class);
 
@@ -131,4 +129,6 @@ Route::name('api.')
         ])->name('users.payments.store');
 
         Route::apiResource('applications', ApplicationController::class);
+
+        Route::apiResource('complaints', ComplaintController::class);
     });

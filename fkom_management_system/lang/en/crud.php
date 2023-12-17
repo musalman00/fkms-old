@@ -22,25 +22,6 @@ return [
         'removed' => 'Successfully removed',
     ],
 
-    'complaints' => [
-        'name' => 'Complaints',
-        'index_title' => 'Complaints List',
-        'new_title' => 'New Complaint',
-        'create_title' => 'Create Complaint',
-        'edit_title' => 'Edit Complaint',
-        'show_title' => 'Show Complaint',
-        'inputs' => [
-            'kiosk_participant_id' => 'Kiosk Participant',
-            'title' => 'Title',
-            'category' => 'Category',
-            'description' => 'Description',
-            'attachment' => 'Attachment',
-            'technician_assign' => 'Technician Assign',
-            'reply' => 'Reply',
-            'status' => 'Status',
-        ],
-    ],
-
     'payments' => [
         'name' => 'Payments',
         'index_title' => 'Payments List',
@@ -132,6 +113,25 @@ return [
             'business_type' => 'Business Type',
             'status' => 'Status',
             'reason_reject' => 'Reason Reject',
+        ],
+    ],
+
+    'complaints' => [
+        'name' => 'Complaints',
+        'index_title' => 'Complaints List',
+        'new_title' => 'New Complaint',
+        'create_title' => 'Create Complaint',
+        'edit_title' => 'Edit Complaint',
+        'show_title' => 'Show Complaint',
+        'inputs' => [
+            'kiosk_participant_id' => 'Kiosk Participant',
+            'title' => 'Title',
+            'category' => 'Category',
+            'description' => 'Description',
+            'attachment' => 'Attachment',
+            'technician_assign' => 'Technician Assign',
+            'reply' => 'Reply',
+            'status' => 'Status',
         ],
     ],
 

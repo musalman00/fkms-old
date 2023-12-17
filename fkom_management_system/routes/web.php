@@ -6,8 +6,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\KioskController;
 use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\PromotionController;
+use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\KioskParticipantController;
@@ -39,7 +39,6 @@ Route::prefix('/')
         Route::resource('roles', RoleController::class);
         Route::resource('permissions', PermissionController::class);
 
-        Route::resource('complaints', ComplaintController::class);
         Route::resource('payments', PaymentController::class);
         Route::resource('promotions', PromotionController::class);
         Route::resource('kiosks', KioskController::class);
@@ -49,4 +48,5 @@ Route::prefix('/')
         );
         Route::resource('users', UserController::class);
         Route::resource('applications', ApplicationController::class);
+        Route::resource('complaints', ComplaintController::class);
     });

@@ -80,6 +80,8 @@
     <x-inputs.group class="w-full">
         <x-inputs.select name="status" label="Status">
             @php $selected = old('status', ($editing ? $complaint->status : '')) @endphp
+            <option value="Pending" {{ $selected == 'Pending' ? 'selected' : '' }} >Pending</option>
+            <option value="Done" {{ $selected == 'Done' ? 'selected' : '' }} >Done</option>
         </x-inputs.select>
     </x-inputs.group>
 </div>
