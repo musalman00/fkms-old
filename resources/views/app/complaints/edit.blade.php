@@ -26,7 +26,7 @@
                             href="{{ route('complaints.index') }}"
                             class="button"
                         >
-                            <i
+                            <!-- <i
                                 class="
                                     mr-1
                                     icon
@@ -35,7 +35,7 @@
                                 "
                             ></i>
                             @lang('crud.common.back')
-                        </a>
+                        </a> -->
 
                         <a
                             href="{{ route('complaints.create') }}"
